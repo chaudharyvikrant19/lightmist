@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params" >
+        <fieldset name="menu_extra">
+            <field name="ismegamenu" type="radio" label="Is Mega Menu Item" class="btn-group btn-group-yesno"
+                   description="Is Mega Menu Item" default="0">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </field>
+            <field name="megapos" type="list" label="Mega Menu Position"
+                   description="Mega Menu Position" default="mega-menu-pos-1">
+                   <option value="mega-menu-pos-1">Mega Menu Position 1</option>
+                   <option value="mega-menu-pos-2">Mega Menu Position 2</option>
+                   <option value="mega-menu-pos-3">Mega Menu Position 3</option>
+                   <option value="mega-menu-pos-4">Mega Menu Position 4</option>
+                   <option value="mega-menu-pos-5">Mega Menu Position 5</option>
+            </field>
+            <field name="ishomepage" type="radio" label="Is Home Page" class="btn-group btn-group-yesno"
+                   description="Is Home Page" default="0">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </field>
+            <field name="iconclass"
+                   type="text"
+                   label="Menu Item Icon Class"
+                   description="Icon before menu item"/>
+        </fieldset>
+    </fields>
+</form>

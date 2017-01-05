@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                type="AzuraMedia"
+                name="img"
+                id="img"
+                class="input-xlarge"
+                label="Image Source"
+                description="Image Source"  />
+            <field
+                type="text"
+                name="width"
+                id="width"
+                class="input-xlarge"
+                label="Width"
+                description="Width"  />
+            <field
+                type="text"
+                name="height"
+                id="height"
+                class="input-xlarge"
+                label="Height"
+                description="Height"  />
+            <field
+                type="text"
+                name="title"
+                id="title"
+                class="input-xlarge"
+                label="Title"
+                description="Title"  />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

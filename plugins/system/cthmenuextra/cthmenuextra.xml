@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+        <name>CTHthemes Menu Extra Field</name>
+        <author>CTHthemes</author>
+        <creationDate>September 2014</creationDate>
+        <copyright>Copyright (C) 2014 CTHthemes. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+        <authorEmail>contact@cththemes.com</authorEmail>
+        <authorUrl>http://cththemes.com</authorUrl>
+        <version>1.0.0</version>
+        <description><![CDATA[
+				Cththemes - Menu Extra Field Plugin. Info and Support: <a href="mailto:cththemes01@gmail.com">cththemes01@gmail.com</a> - <a href="index.php?option=com_plugins">Go to Plugin Manager</a> 
+			]]></description>
+        <files>
+                <file plugin="cthmenuextra">cthmenuextra.php</file>
+                <file>index.html</file>
+                <folder>params</folder>
+				<folder>language</folder>
+        </files>
+		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.plg_system_cthmenuextra.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_system_cthmenuextra.sys.ini</language>
+		</languages>
+</extension>

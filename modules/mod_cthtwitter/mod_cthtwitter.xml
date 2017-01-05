@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CTHthemes Twitter</name>
+	<author>CTHthemes</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>Copyright Infor CTHthemes.com</copyright>
+	<license>License Infor CTHthemes.com</license>
+	<authorEmail>contact.cththemes@gmail.com</authorEmail>
+	<authorUrl>http://cththemes.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_CTHTWITTER_XML_DESC</description>
+	<files>
+		<filename module="mod_cthtwitter">mod_cthtwitter.php</filename>
+		<folder>tmpl</folder>
+		<folder>lib</folder>
+		<folder>cache</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_cthtwitter.xml</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_cthtwitter.ini</language>
+		<language tag="en-GB">en-GB.mod_cthtwitter.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" >
+				<field
+					name="bgimage"
+					type="media"
+					default=""
+					label="MOD_AAATHEMETWITTER_FIELD_BACKGROUND_IMAGE_LABEL"
+					description="MOD_AAATHEMETWITTER_FIELD_BACKGROUND_IMAGE_LABEL" />
+				
+				<field
+					name="twittslink"
+					type="text"
+					default=""
+					label="MOD_AAATHEMETWITTER_FIELD_TWITTER_LINK_LABEL"
+					description="MOD_AAATHEMETWITTER_FIELD_TWITTER_LINK_LABEL" />			
+				<field
+					name="twittername"
+					type="text"
+					default="Cththemes"
+					label="MOD_AAATHEMETWITTER_FIELD_TWITTERNAME_LABEL"
+					description="MOD_AAATHEMETWITTER_FIELD_TWITTERNAME_DESC" />
+				
+		        <field 
+		        	name="consumer_key" 
+		        	type="text" 
+		        	default="b1gNFU5p55j7GR0vACWyZf0j8" 
+		        	label="MOD_AAATHEMETWITTER_FIELD_CONSUMER_KEY_LABEL" 
+		        	description="MOD_AAATHEMETWITTER_FIELD_CONSUMER_KEY_DESC" />
+		        <field 
+		        	name="consumer_key_secret" 
+		        	type="text" 
+		        	default="V0a7UkD0XTuP4zdoJoBPlpbQC9TtGk8ucotXRZZZP4MYv7TkK2" 
+		        	label="MOD_AAATHEMETWITTER_FIELD_CONSUMER_KEY_SECRET_LABEL" 
+		        	description="MOD_AAATHEMETWITTER_FIELD_CONSUMER_KEY_SECRET_DESC" />
+		        <field 
+		        	name="access_token" 
+		        	type="text" 
+		        	default="2549127786-T8zZA3d7cJcgDkI2kwbfQ2XeU8exphGZu3hZVvK" 
+		        	label="MOD_AAATHEMETWITTER_FIELD_ACCESS_TOKEN_LABEL" 
+		        	description="MOD_AAATHEMETWITTER_FIELD_ACCESS_TOKEN_DESC" />
+		        <field 
+		        	name="access_token_secret" 
+		        	type="text"
+		        	default="pQXlpkL9CSCIsEnGF5xgsjKObDRWcD77thGkFG9RLzgjs" 
+		        	label="MOD_AAATHEMETWITTER_FIELD_ACCESS_TOKEN_SECRET_LABEL" 
+		        	description="MOD_AAATHEMETWITTER_FIELD_ACCESS_TOKEN_SECRET_DESC" />
+		         <field 
+		        	name="counts" 
+		        	type="text"
+		        	default="3" 
+		        	label="MOD_AAATHEMETWITTER_FIELD_COUNT_LABEL" 
+		        	description="MOD_AAATHEMETWITTER_FIELD_COUNT_DESC" />
+			</fieldset>
+			
+			
+			<fieldset
+				name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    class="input-xlarge"
+                    label="Slider ID"
+                    description="Slider ID"/>
+
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    default=""
+                    class="input-xlarge"
+                    label="Slider Class"
+                    description="Slider Class"
+                    />
+            <field
+                    type="list"
+                    name="transtyle"
+                    default=""
+                    class="input-xlarge"
+                    id="transtyle"
+                    label="Transition Type"
+                    description="Transition Type">
+                <option value="">- Select -</option>
+                <option value="fade">Fade</option>
+                <option value="backSlide">backSlide</option>
+                <option value="goDown">goDown</option>
+                <option value="scaleUp">scaleUp</option>
+            </field>
+            <field
+                    type="text"
+                    name="sliderspeed"
+                    id="sliderspeed"
+                    default="200"
+                    class="input-xlarge"
+                    label="Slider Speed"
+                    description="Slider Speed"
+                    />
+            <field
+                    type="text"
+                    name="rewindspeed"
+                    id="rewindspeed"
+                    default="1000"
+                    class="input-xlarge"
+                    label="Rewind Speed"
+                    description="Rewind Speed"
+                    />
+            <field
+                    type="text"
+                    name="items"
+                    id="items"
+                    default="5"
+                    class="input-xlarge"
+                    label="Slide Per View"
+                    description="Slide Per View"
+                    />
+            <field
+                    type="radio"
+                    name="issingle"
+                    id="issingle"
+                    label="Is Single?"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Set this to Yes if you want to display single item only" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <!-- <field
+                    type="text"
+                    name="itemscustom"
+                    id="itemscustom"
+                    default=""
+                    label="itemsCustom"
+                    description="itemsCustom"
+                    /> -->
+            <field
+                    type="text"
+                    name="autoplay"
+                    id="autoplay"
+                    class="input-xlarge"
+                    label="AutoPlay"
+                    default="false"
+                    description="Boolen or number in mili-second (5000)" />
+            <field
+                    type="radio"
+                    name="stoponhover"
+                    id="stoponhover"
+                    label="Stop on Hover"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Stop on Hover" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="pagination"
+                    id="pagination"
+                    default="1"
+
+                    class="btn-group btn-group-yesno"
+                    label="Show Pagination"
+                    description="Show Pagination"
+                    >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="text"
+                    name="paginationspeed"
+                    id="paginationspeed"
+                    default="800"
+                    class="input-xlarge"
+                    label="Pagination Speed"
+                    description="Pagination Speed"
+                    />
+            <field
+                    type="radio"
+                    name="navigation"
+                    id="navigation"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show Navigation"
+                    description="Show Navigation"
+                    >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="autoheight"
+                    id="autoheight"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Auto Height"
+                    description="Auto Height"
+                    >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="mousedrag"
+                    id="mousedrag"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Use Mouse Drag"
+                    description="Use Mouse Drag"
+                    >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="touchdrag"
+                    id="touchdrag"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Use Touch Drag"
+                    description="Use Touch Drag"
+                    >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraowlcarousel" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="true"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

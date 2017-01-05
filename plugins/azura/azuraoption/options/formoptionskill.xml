@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            
+            <field
+                    type="text"
+                    name="percent"
+                    default="100"
+                    id="percent"
+                    label="Skill Value"
+                    description="Skill Value"
+                    />
+            
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    default="JOOMLA"
+                    label="Skill Title"
+                    description="Skill Title"
+                    />
+            <field
+                    type="color"
+                    name="skill_bg"
+                    default="#e5e5e5"
+                    id="skill_bg"
+                    label="Background Color"
+                    description="Background Color"
+                    />
+            <field
+                    type="color"
+                    name="skill_val"
+                    default="#d1d1d1"
+                    id="skill_val"
+                    label="Skill Color"
+                    description="Skill Color"
+                    />
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    default=""
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+
+            <!-- <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraquote" client="site"/> -->
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Skill Description (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Skill Description (Can be use with html tags)"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

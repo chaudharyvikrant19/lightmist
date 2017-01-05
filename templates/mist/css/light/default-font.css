@@ -1,0 +1,64 @@
+.tp-caption.modern_medium_fat {
+font-family:"Arimo",sans-serif;
+}
+.tp-caption.modern_medium_fat_white {
+font-family:"Arimo",sans-serif;
+}
+.tp-caption.modern_medium_light {
+font-family:"Arimo",sans-serif;
+}
+.tp-caption.modern_big_bluebg {
+font-family:"Arimo",sans-serif;
+}
+.tp-caption.modern_big_redbg {
+font-family:"Arimo",sans-serif;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+input,
+button,
+select,
+textarea {
+  font-family: 'Arimo', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:Oswald,sans-serif;
+}
+.title{
+	font-family:Oswald,sans-serif;
+}
+.tp-caption.description {
+	font-family: 'Arimo', sans-serif;
+}
+.pricing .price-box .price {
+  font-family:Oswald,sans-serif;
+}
+.pricing .price-box .price span {
+  font-family: 'Arimo', sans-serif;
+}
+.count-number .counter{ 
+	font-family:Oswald,sans-serif;
+ }
+.get-a-quote{
+    font-family:Oswald,sans-serif;
+}
+.blog.timeliner >li .timeline-icon .date span {
+    font-family: Oswald,sans-serif;
+}
+.countdown-amount {
+	font-family:Oswald,sans-serif;
+}
+.countdown-amount {
+	font-family:Oswald,sans-serif;
+}
+.schedule .tabs .nav-tabs > li{
+	font-family: Oswald,sans-serif;
+}
+.price{
+	font-family:Oswald,sans-serif;
+}
+.footer-count {	
+    font-family:Oswald,sans-serif;
+}

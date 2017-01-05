@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params" >
+        <fieldset name="header_style">
+            <field name="headerstyle"
+                   type="list"
+                   default="fixed_header"
+                   label="Header Style"
+                   description="Header Style">
+                   <option value="simple_header">Simple Header</option>
+                   <option value="fixed_header">Fixed Header</option>
+                   <option value="shop_header_static">Shop Header Static</option>
+                   <option value="shop_header">Shop Header</option>
+                   <option value="dark_header">Dark Header</option>
+                   <option value="transparent_header">Transparent Header</option>
+                   <option value="transparent_to_dark">Transparent To Dark</option>
+                   <option value="icon_header">Icon Header</option>
+                   <option value="boxed_header">Boxed Header</option>
+                   <option value="push_menu_header">Push Menu Header</option>
+                   <option value="right_toggle">Right Toggle Menu</option>
+                   <option value="center_menu_header">Center Menu Header</option>
+                   <option value="header_top_bar">Header Top Bar</option>
+                   <option value="header_breadcrumb">Header Breadcrumb</option>
+                   <option value="header_center">Header Center</option>
+                   <option value="header_below_slider">Header Below Slider</option>
+                   <option value="header_logo_center">Header Logo Center</option>
+                   <option value="top_logo_left">Top Logo Left</option>
+                   <option value="top_logo_center">Top Logo Center</option>
+                   <option value="semi_dark_header">Semi Dark Header</option>
+                   <option value="semi_light_header">Semi Light Header</option>
+                   <option value="light_to_dark_header">Light To Dark Header</option>
+                   <option value="dark_to_light_header">Dark To Light Header</option>
+                   <option value="toggle_light_header">Toggle Light Header</option>
+                   <option value="toggle_dark_header">Toggle Dark Header</option>
+                   <option value="vertical_header_1">Vertical Header 1</option>
+                   <option value="vertical_header_2">Vertical Header 2</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

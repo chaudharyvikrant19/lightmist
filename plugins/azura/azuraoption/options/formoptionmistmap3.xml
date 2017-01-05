@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+
+            <field
+                    type="AzuraGMapSelect"
+                    name="selectMap"
+                    id="selectMap"
+                    class="input-medium"
+                    label="Select Map"
+                    description="Select Map Coordinates">
+            </field>
+            <field
+                    type="text"
+                    name="gmaplat"
+                    id="gmaplat"
+                    default="-35.2835"
+                    label="Latitude"
+                    description="Latitude"
+                    />
+            <field
+                    type="text"
+                    name="gmaplog"
+                    id="gmaplog"
+                    default="149.128"
+                    label="Longitude"
+                    description="Longitude"
+                    />
+            <field
+                    type="text"
+                    name="zoom"
+                    id="zoom"
+                    default="12"
+                    label="Zoom"
+                    description="Zoom"
+                    />
+
+            <field
+                    type="radio"
+                    name="scrollwheel"
+                    id="scrollwheel"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Scroll Wheel"
+                    description="Scroll Wheel"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="zoomcontrol"
+                    id="zoomcontrol"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Zoom Control"
+                    description="Zoom Control"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="draggable"
+                    id="draggable"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Draggable"
+                    description="Draggable"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field 
+                name="mapType" 
+                id="mapType"
+                type="list" 
+                default="ROADMAP" 
+                label="Map Type" 
+                description="Map Type" >
+                    <option value="hybrid">HYBRID</option>
+                    <option value="roadmap">ROADMAP</option>
+                    <option value="satellite">SATELLITE</option>
+                    <option value="terrain">TERRAIN</option>
+            </field>
+            <field
+                    type="color"
+                    name="hue"
+                    id="hue"
+                    default="#ffc400"
+                    label="Color style"
+                    description="Color style"
+                    />
+            <field
+                    type="text"
+                    name="height"
+                    id="height"
+                    default="376"
+                    label="Map Height"
+                    description="Enter map height in pixels. Example: 250"
+                    />
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    default=""
+                    label="Title"
+                    description="Title"
+                    />
+        </fieldset>
+    </fields>
+    
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Content String (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Content String (Can be use with html tags)"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

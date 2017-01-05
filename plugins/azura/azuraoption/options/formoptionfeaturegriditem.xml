@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            
+            
+            <field
+                    type="AzuraFontIcon"
+                    name="iconclass"
+                    id="iconclass"
+                    class="input-large"
+                    label="Icon"
+                    description="Icon"
+                    />
+            <field
+                    type="AzuraMedia"
+                    name="image"
+                    id="image"
+                    label="Image Icon"
+                    class="input-large"
+                    preview="false"
+                    description="Image Icon" />
+            <!-- <field
+                    type="AzuraMedia"
+                    name="imageren"
+                    id="imageren"
+                    label="Retina Image Icon"
+                    class="input-large"
+                    preview="false"
+                    description="Retina Image Icon" /> -->
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="azura_w97"
+                    label="Title"
+                    description="Title"
+                    />
+            <field
+                    type="text"
+                    name="link"
+                    id="link"
+                    class="azura_w97"
+                    label="External Link"
+                    description="External Link"
+                    />
+            <!-- <field
+                    type="radio"
+                    name="isactive"
+                    id="isactive"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    label="Is Active"
+                    description="Is Active" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+                
+            </field> -->
+             <!-- <field
+                    type="text"
+                    name="icon_width"
+                    id="icon_width"
+                    label="Icon Width"
+                    description="Icon Width"
+                    default="" />
+            <field
+                    type="text"
+                    name="icon_height"
+                    id="icon_height"
+                    label="Icon Height"
+                    description="Icon Height"
+                    default="" /> -->
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    default="" />
+            <field
+                    type="hidden"
+                    name="columnwidthclass"
+                    id="columnwidthclass"
+                    label="Column Width Class"
+                    description="Column Width Class"
+                    />
+            <!-- <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraiconbox" client="site"/> -->
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="introduction"
+                    id="introduction"
+                    label="Item Content"
+                    class="textelement-content"
+                    description="Item Content"
+                    cols="24"
+                    rows="15" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

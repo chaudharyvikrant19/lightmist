@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_cth_socialphotostream</name>
+	<author>Cththemes</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>cththemes@gmail.com</authorEmail>
+	<authorUrl>www.cththemes.com</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_CTH_SOCIALPHOTOSTREAM_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_cth_socialphotostream">mod_cth_socialphotostream.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_cth_socialphotostream.ini</language>
+		<language tag="en-GB">en-GB.mod_cth_socialphotostream.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field
+					name="typephoto"
+					type="list"
+					label="MOD_TYPE_OF_PHOTOSTREAM_LABEL"
+					description="MOD_TYPE_OF_PHOTOSTREAM_LABEL" >
+					<option value="flickr">Flickr Photos</option>
+					<option value="pinterest">Pinterest Photos</option>
+					<option value="instagram">Instagram Photos</option>
+					<option value="dribbble">Dribbble Photos</option>
+					<option value="youtube">Youtube Video</option>
+				</field>
+				<field name="" type="note" default="Flickr" label="Flickr" description=""/>
+				<field name="flickruser" type="text" label="User" description="User" />
+				<field name="flickrlimit" type="text" label="Limit" description="Limit" />
+
+				<field name="" type="note" default="Pinterest" label="Pinterest" description=""/>
+				<field name="pinterestuser" type="text" label="User" description="User" />
+				<field name="pinterestlimit" type="text" label="Limit" description="Limit" />
+
+				<field name="" type="note" default="Instagram" label="Instagram" description=""/>
+				<field name="instagramuser" type="text" label="User" description="User" />
+				<field name="instagramlimit" type="text" label="Limit" description="Limit" />
+
+				<field name="" type="note" default="Dribbble" label="Dribbble" description=""/>
+				<field name="dribbbleuser" type="text" label="User" description="User" />
+				<field name="dribbblelimit" type="text" label="Limit" description="Limit" />
+
+				<field name="" type="note" default="Youtube" label="Youtube" description=""/>
+				<field name="youtubeuser" type="text" label="User" description="User" />
+				<field name="youtubelimit" type="text" label="Limit" description="Limit" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

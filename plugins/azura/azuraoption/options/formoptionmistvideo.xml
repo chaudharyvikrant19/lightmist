@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    class="input-xlarge"
+                    label="Container Id"
+                    description="Container Id"  />
+            <field
+                    type="text"
+                    name="link"
+                    id="link"
+                    class="input-xlarge"
+                    label="Youtube Link"
+                    description="Youtube Link"  />
+            <field
+                    type="text"
+                    name="containment"
+                    id="containment"
+                    class="input-xlarge"
+                    label="Containment Id"
+                    description="Containment Id"
+                    />
+            <field
+                    type="text"
+                    name="startat"
+                    id="startat"
+                    class="input-xlarge"
+                    default="0"
+                    label="Start At"
+                    description="Start At"
+                    />
+            <field
+                    type="radio"
+                    name="mute"
+                    id="mute"
+                    label="Mute"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Mute" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="autoplay"
+                    id="autoplay"
+                    label="Auto Play"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Auto Play" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showcontrols"
+                    id="showcontrols"
+                    label="Show Controls"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Show Controls" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="template" client="site" method="upgrade">
+        <name>Mist</name>
+        <creationDate>April 2015</creationDate>
+        <author>CTHthemes</author>
+        <authorEmail>contact.cththemes@gmail.com</authorEmail>
+        <authorUrl>http://cththemes.com</authorUrl>
+        <copyright>Copyright Info  CTHthemes.com</copyright>
+        <license>License Info  CTHthemes.com</license>
+        <version>1.1.0</version>
+        <description><![CDATA[
+                CTHthemes About - Mist Corporate Joomla Template. Info and Support: <a href="mailto:cththemes@gmail.com">cththemes@gmail.com</a> - <a href="index.php?option=com_templates">Go to Template Manager</a> 
+            ]]></description>
+        <files>
+                <filename>component.php</filename>
+                <filename>error.php</filename>
+                <filename>index.html</filename>
+                <filename>index.php</filename>
+                <filename>template_preview.png</filename>
+                <filename>template_thumbnail.png</filename>
+                <filename>templateDetails.xml</filename>
+            <folder>css</folder>
+            <folder>fields</folder>
+            <folder>fonts</folder>
+            <folder>html</folder>
+            <folder>images</folder>
+            <folder>js</folder>
+            <folder>language</folder>
+            <folder>layout</folder>
+        </files>
+        <languages folder="language">
+            <language tag="en-GB">en-GB/en-GB.tpl_mist.ini</language>
+            <language tag="en-GB">en-GB/en-GB.tpl_mist.sys.ini</language>
+        </languages>
+        <positions>
+            <position>top-info</position>
+            <position>top-social</position>
+            <position>main-nav</position>
+            <position>search-main-nav</position>
+            <position>main-slider</position>
+            <position>breadcrumbs</position>
+            <position>mega-menu-pos-1</position>
+            <position>mega-menu-pos-2</position>
+            <position>mega-menu-pos-3</position>
+            <position>right_of_menu</position>
+
+            <position>title-bar</position>
+            <position>description-portfolio</position>
+            <position>sidebar</position>
+            <position>position-8</position>
+            <position>position-7</position>
+
+            <position>position-1</position>
+            <position>position-2</position>
+            <position>position-3</position>
+            <position>position-4</position>
+            <position>position-5</position>
+            <position>position-6</position>
+            <position>position-9</position>
+            <position>feature-product</position>
+            <position>before-footer</position>
+            <position>footer-1</position>
+            <position>footer-2</position>
+            <position>footer-3</position>
+            <position>footer-4</position>
+            <position>footer-copyright</position>
+            <position>azurahide</position>
+            <position>debug</position>
+
+        </positions>
+        
+         <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="favicon" type="media" label="Favicon"
+                    description="Favicon" directory=""/>
+                <field name="logoImage" type="media" label="Logo Image"
+                    description="Logo Image" directory=""/>
+                <field name="logoText" type="textarea" cols="14" rows="10" filter="safehtml" label="Logo Text"
+                    description="Logo Text" default=""/>
+                <field name="logoType" type="list" label="Logo Type"
+                    description="Logo Type" default="image">
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                    <option value="both">Both</option>
+                </field>
+                <field name="logoWidth" type="text" label="Logo Width" description="Logo Width" default=""/>
+                <field name="logoHeight" type="text" label="Logo Height" description="Logo Height" default=""/>
+                <field name="bgmenu" type="media" label="Background Menu Image"
+                    description="Only for Vertical Header 2 Menu Style " directory=""/>
+                <field name="showmenuicon" type="radio" label="Show Menu Icon" class="btn-group btn-group-yesno" description="Show Menu Icon" default="0">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field type="textarea" name="customcsslinks" label="Custom CSS Links" description="Custom CSS Links (related path to theme folder)" />
+                <field type="textarea" name="customjslinks" label="Custom JS Links" description="Custom JS Links (related path to theme folder)" />
+                <field name="error" type="menuitem" published="1" label="Error Page Menu" description="The Menu page to redirect to if request page is not found"/>
+
+            </fieldset>
+            <fieldset name="cththemes_layout" >
+                <field name="bodylayout" type="radio" label="Body Layout" class="btn-group btn-group-yesno"
+                    description="Body Layout" default="wide">
+                    <option value="wide">Wide</option>
+                    <option value="boxed">Boxed</option>
+                </field>
+                <field name="bodybackgroundimage" id="bodybackgroundimage" type="media" label="Body Background Image" description="Body Background Image" />
+                <field name="bodybackgroundcolor" id="bodybackgroundcolor" type="color" label="Body Background Color" description="Body Background Color" />
+
+                <field name="hideComponentErea" type="radio" label="Hide Component Area" class="btn-group btn-group-yesno"
+                    description="Hide Component Area" default="0">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="darklight" type="radio" label="Dark or Light style" class="btn-group btn-group-yesno"
+                    description="Dark or Light style" default="light">
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </field>
+                <field name="layoutstyle" type="list" label="Content Layout"
+                    description="Content Layout" default="rightsidebar">
+                    <option value="home">Home Page</option>
+                    <option value="leftsidebar">Left Sidebar</option>
+                    <option value="nosidebar">No Sidebar</option>
+                    <option value="rightsidebar">Right Sidebar</option>
+                </field>
+            </fieldset>
+            <fieldset name="cththemes_googlefont" addfieldpath="/templates/mist/fields">
+
+                <field type="CthScript"/>
+
+                <field 
+                    name="useDifferentFont" 
+                    type="radio" 
+                    label="Use Different Fonts" 
+                    class="btn-group btn-group-yesno"
+                    description="Use Different Fonts" 
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field 
+                    type="GoogleFont"
+                    name="bodyfont"
+                    label="Body Font"
+                    description="Body Font"
+                    default="Arimo">
+                </field>
+                <field name="bodyfontvariants" type="checkboxes" label="Font Style">
+                    <option value="100">Thin</option>
+                    <option value="100italic">100 Italic</option>
+                    <option value="200">200</option>
+                    <option value="200italic">200 Italic</option>
+                    <option value="300">300</option>
+                    <option value="300italic">300 Italic</option>
+                    <option value="400">400</option>
+                    <option value="400itanic">400 Itanic</option>
+                    <option value="regular">Regular</option>
+                    <option value="italic">Italic</option>
+                    <option value="500">500</option>
+                    <option value="500italic">500 Italic</option>
+                    <option value="600">600</option>
+                    <option value="600italic">600 Italic</option>
+                    <option value="700">700</option>
+                    <option value="700italic">700 Italic</option>
+                    <option value="800">800</option>
+                    <option value="800italic">800 Italic</option>
+                    <option value="900">900</option>
+                    <option value="900italic">900 Italic</option>
+                </field>
+                <field type="hidden" default="Arimo" name="bodyfontfamily"></field>
+    
+                <field 
+                    type="GoogleFont"
+                    name="headingfont"
+                    label="Heading Font"
+                    description="Heading Font"
+                    default="Oswald:400,300,700">
+                </field>
+                <field name="headingfontvariants" type="checkboxes" label="Font Style">
+                    <option value="100">Thin</option>
+                    <option value="100italic">100 Italic</option>
+                    <option value="200">200</option>
+                    <option value="200italic">200 Italic</option>
+                    <option value="300">300</option>
+                    <option value="300italic">300 Italic</option>
+                    <option value="400">400</option>
+                    <option value="regular">Regular</option>
+                    <option value="italic">Italic</option>
+                    <option value="500">500</option>
+                    <option value="500italic">500 Italic</option>
+                    <option value="600">600</option>
+                    <option value="600italic">600 Italic</option>
+                    <option value="700">700</option>
+                    <option value="700italic">700 Italic</option>
+                    <option value="800">800</option>
+                    <option value="800italic">800 Italic</option>
+                    <option value="900">900</option>
+                    <option value="900italic">900 Italic</option>
+                </field>
+                <field type="hidden" default="Oswald" name="headingfontfamily"></field>
+            </fieldset>
+
+            <fieldset name="cththemes_colors" >
+                <field name="preset" type="radio" default="color" class="colorpresets" label="Presets" description="Presets">
+                    <option value="color">Default</option>
+                </field>
+                <field 
+                    name="overrideColor" 
+                    type="radio" 
+                    label="Use Your Color" 
+                    class="btn-group btn-group-yesno"
+                    description="Use Your Color" 
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field 
+                    name="textColor" 
+                    type="color"
+                    default="#ffc400"
+                    label="Text Color"
+                    description="Select Your Own Color"/>
+                <field 
+                    name="borderColor" 
+                    type="color"
+                    default="#ffc400"
+                    label="Border Color"
+                    description="Select Your Own Color"/>
+                <field 
+                    name="backgroundColor" 
+                    type="color"
+                    default="#ffc400"
+                    label="Background Color"
+                    description="Select Your Own Color"/>
+                <field name="colorReset" type="ColorReset" label="Reset Colors" description="Reset Colors" />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

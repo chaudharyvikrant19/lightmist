@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <!-- <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+ -->
+            
+            <field
+                    type="text"
+                    name="value"
+                    id="value"
+                    default="50"
+                    label="Value"
+                    description="Value" />
+
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    default="50%"
+                    label="Title"
+                    description="Title"
+                    />
+            <!-- <field
+                    type="list"
+                    name="type"
+                    id="type"
+                    label="Progress Type"
+                    description="Progress Type" >
+                <option value="">Default</option>
+                <option value="two">Type 2</option>
+                <option value="three">Type 3</option>
+                <option value="four">Type 4</option>
+                <option value="five">Type 5</option>
+            </field> -->
+            <field
+                    type="list"
+                    name="type"
+                    id="type"
+                    label="Progress Type"
+                    description="Progress Type" >
+                <option value="">Default</option>
+                <option value="2">Type 2</option>
+                <option value="3">Type 3</option>
+                <option value="4">Type 4</option>
+                <option value="5">Type 5</option>
+            </field>
+            <!-- <field
+                    type="radio"
+                    name="striped"
+                    id="striped"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Striped Effect"
+                    description="Striped Effect" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field> -->
+            <!-- <field
+                    type="radio"
+                    name="animated"
+                    id="animated"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Striped Animated"
+                    description="Striped Animated" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="aschild"
+                    id="aschild"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="As Child"
+                    description="As Child" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field> -->
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    label="Class"
+                    description="Class"
+                    />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraprogress" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

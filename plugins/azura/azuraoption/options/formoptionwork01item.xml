@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="AzuraMedia"
+                    name="thumb"
+                    id="thumb"
+                    label="Thumbnail Photo"
+                    class="input-xlarge"
+                    preview="false"
+                    description="Thumbnail Photo" />
+            <field
+                    type="AzuraMedia"
+                    name="full"
+                    id="full"
+                    label="Light Link"
+                    class="input-xlarge"
+                    preview="false"
+                    description="Leave this blank to use thumbnail image instead" />
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="input-xlarge"
+                    label="Title"
+                    description="Title"
+                    />
+            <field
+                    type="text"
+                    name="subtitle"
+                    id="subtitle"
+                    class="input-xlarge"
+                    label="Subtitle"
+                    description="Subtitle"
+                    />
+            <field
+                    type="text"
+                    name="filter"
+                    id="filter"
+                    default=""
+                    class="input-xlarge"
+                    label="Filter Tags"
+                    description="Item filter tags that used to classify works. Separated by a comma (ex: Graphic,Logo,Emotion)"
+            />
+            <!-- <field
+                    type="radio"
+                    name="isactive"
+                    id="isactive"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    label="Is Active"
+                    description="Is Active" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+                
+            </field> -->
+             <!-- <field
+                    type="text"
+                    name="icon_width"
+                    id="icon_width"
+                    label="Icon Width"
+                    description="Icon Width"
+                    default="" />
+            <field
+                    type="text"
+                    name="icon_height"
+                    id="icon_height"
+                    label="Icon Height"
+                    description="Icon Height"
+                    default="" /> -->
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    default="" />
+            <field
+                    type="hidden"
+                    name="columnwidthclass"
+                    id="columnwidthclass"
+                    label="Column Width Class"
+                    description="Column Width Class"
+                    />
+            <!-- <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraiconbox" client="site"/> -->
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="introduction"
+                    id="introduction"
+                    label="Item Content"
+                    class="w_97 input-xxlarge"
+                    description="Item Content"
+                    cols="24"
+                    rows="3" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

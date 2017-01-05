@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <!-- <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID"
+                     /> -->
+            <field
+                    type="radio"
+                    name="isfullwidth"
+                    id="isfullwidth"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Is Fullwidth"
+                    description="Is Fullwidth"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Extra Class"
+                    description="Extra Class"
+                    default="" />
+            <field
+                    type="radio"
+                    name="showfilter"
+                    id="showfilter"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show Filter"
+                    description="Show Filter"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="text"
+                    name="defaultFilter"
+                    id="defaultFilter"
+                    class="input-xlarge"
+                    label="Default Filter"
+                    description="Default filter for plugin"
+                    default="*" />
+            <field
+                    type="list"
+                    name="animationType"
+                    id="animationType"
+                    class="input-xlarge"
+                    label="Animation Type"
+                    description="Defines which animation to use for items that will be shown or hidden after a filter has been activated."
+                    default="fadeOut">
+                <option value="fadeOut">fadeOut</option>
+                <option value="quicksand">quicksand</option>
+                <option value="boxShadow">boxShadow</option>
+                <option value="bounceLeft">bounceLeft</option>
+                <option value="bounceTop">bounceTop</option>
+                <option value="bounceBottom">bounceBottom</option>
+                <option value="moveLeft">moveLeft</option>
+                <option value="slideLeft">slideLeft</option>
+                <option value="fadeOutTop">fadeOutTop</option>
+                <option value="sequentially">sequentially</option>
+                <option value="skew">skew</option>
+                <option value="slideDelay">slideDelay</option>
+                <option value="3d">3d</option>
+                <option value="Flip">Flip</option>
+                <option value="rotateSides">rotateSides</option>
+                <option value="flipOutDelay">flipOutDelay</option>
+                <option value="flipOut">flipOut</option>
+                <option value="unfold">unfold</option>
+                <option value="foldLeft">foldLeft</option>
+                <option value="scaleDown">scaleDown</option>
+                <option value="scaleSides">scaleSides</option>
+                <option value="frontRow">frontRow</option>
+                <option value="flipBottom">flipBottom</option>
+                <option value="rotateRoom">rotateRoom</option>
+            </field>
+            <field
+                    type="text"
+                    name="gapHorizontal"
+                    id="gapHorizontal"
+                    class="input-xlarge"
+                    label="Horizontal gap between items"
+                    description="only integers (ex: 1, 5, 10)n"
+                    default="10" />
+            <field
+                    type="text"
+                    name="gapVertical"
+                    id="gapVertical"
+                    class="input-xlarge"
+                    label="Vertical gap between items"
+                    description="only integers (ex: 1, 5, 10)n"
+                    default="10" />
+            <field
+                    type="list"
+                    name="gridAdjustment"
+                    id="gridAdjustment"
+                    class="input-xlarge"
+                    label="Adjust the layout grid. "
+                    description="Adjust the layout grid. 
+- default (no adjustment applied) 
+- alignCenter (align the grid on center of the page) 
+- responsive (use a fluid grid to resize the grid)"
+                    default="responsive">
+                <option value="default">default</option>
+                <option value="alignCenter">alignCenter</option>
+                <option value="responsive">responsive</option>
+            </field>
+            <field
+                    type="list"
+                    name="caption"
+                    id="caption"
+                    class="input-xlarge"
+                    label="Caption - the overlay that is shown when you put the mouse over an item."
+                    description="NOTE: If you don't want to have captions just leave this option to an empty string ( caption: '')"
+                    default="pushTop"> 
+                <option value="pushTop">pushTop</option>
+                <option value="pushDown">pushDown</option>
+                <option value="revealBottom">revealBottom</option>
+                <option value="revealTop">revealTop</option>
+                <option value="moveRight">moveRight</option>
+                <option value="moveLeft">moveLeft</option>
+                <option value="overlayBottomPush">overlayBottomPush</option>
+                <option value="overlayBottom">overlayBottom</option>
+                <option value="overlayBottomReveal">overlayBottomReveal</option>
+                <option value="overlayBottomAlong">overlayBottomAlong</option>
+                <option value="overlayRightAlong">overlayRightAlong</option>
+                <option value="minimal">minimal</option>
+                <option value="fadeIn">fadeIn</option>
+                <option value="zoom">zoom</option>
+                <option value="">None</option>
+            </field>
+            <field
+                    type="list"
+                    name="displayType"
+                    id="displayType"
+                    class="input-xlarge"
+                    label="Display Type"
+                    description="The plugin will display his content based on the following values. "
+                    default="lazyLoading">  
+                <option value="default">default</option>
+                <option value="fadeIn">fadeIn</option>
+                <option value="lazyLoading">lazyLoading</option>
+                <option value="fadeInToTop">fadeInToTop</option>
+                <option value="sequentially">sequentially</option>
+                <option value="bottomToTop">bottomToTop</option>
+            </field>
+            <field
+                    type="text"
+                    name="displayTypeSpeed"
+                    id="displayTypeSpeed"
+                    class="input-xlarge"
+                    label="Defines the speed of displaying the items"
+                    description="only integers, values in ms (ex: 200, 300, 500)"
+                    default="400" />
+            <field
+                    type="text"
+                    name="mediaQueries"
+                    id="mediaQueries"
+                    class="input-xlarge"
+                    label="Define `media queries` for columns layout"
+                    description="This option is available only when `gridAdjustment: 'responsive'` (ex: 1600:4;1200:4;800:3;500:2;320:1 or false)"
+                    default="1600:4;1200:4;800:3;500:2;320:1" />
+            <!-- <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="azura_w97"
+                    label="Title"
+                    description="Title"
+                    /> -->
+            <!-- <field
+                    type="text"
+                    name="subtitle"
+                    id="subtitle"
+                    label="Sub Title"
+                    description="Sub Title"
+                    /> -->
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurawork01" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="aceeditor"
+                    name="accContent"
+                    id="accContent"
+                    label="Item Content (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Item Content (Can be use with html tags.)"
+                    cols="24"
+                    rows="15" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="AzuraMedia"
+                    name="img"
+                    id="img"
+                    class="input-xlarge"
+                    default=""
+                    label="Image"
+                    description="Image"  />
+            <field
+                    type="text"
+                    name="menuname"
+                    id="menuname"
+                    class="input-xlarge"
+                    default=""
+                    label="Menu Name"
+                    description="Menu Name"  />
+            <field
+                    type="text"
+                    name="menuprice"
+                    id="menuprice"
+                    class="input-xlarge"
+                    default=""
+                    label="Price"
+                    description="Price"  />
+            <field
+                    type="textarea"
+                    name="description"
+                    id="description"
+                    class="input-xlarge"
+                    default=""
+                    label="Description"
+                    description="Description"  />
+            
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

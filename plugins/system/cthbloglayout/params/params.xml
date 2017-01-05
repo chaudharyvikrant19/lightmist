@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params" >
+        <fieldset name="blog_layout">
+            <field name="blog_cols" type="list" label="Blog Columns"
+                   description="Blog Columns" default="4">
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+            </field>
+            <field name="blog_style" type="list" label="Blog Style"
+                   description="Blog Style" default="grid">
+                   <option value="grid">Grid</option>
+                   <option value="masonry">Masonry</option>
+                   <option value="list">List</option>
+                   <option value="timeline">Time Line</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

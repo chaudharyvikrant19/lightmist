@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                type="text"
+                name="id"
+                id="id"
+                label="ID"
+                description="ID"
+            />
+            <field
+                type="text"
+                name="class"
+                id="class"
+                label="Class"
+                description="Class"
+                default=""
+            />
+            <field
+                type="text"
+                name="width"
+                id="width"
+                class="input-xlarge"
+                default="350"
+                label="Image Width"
+                description="Image Width"  />
+            <field
+                type="text"
+                name="height"
+                id="height"
+                class="input-xlarge"
+                default="350"
+                label="Image Height"
+                description="Image Height"  />
+            <field
+                type="text"
+                name="rows"
+                id="rows"
+                class="input-xlarge"
+                default="3"
+                label="Rows Of Grid"
+                description="Rows Of Grid"  />
+            <field
+                type="text"
+                name="cols"
+                id="cols"
+                class="input-xlarge"
+                default="8"
+                label="Columns Of Grid"
+                description="Columns Of Grid"  />
+            <field
+                type="text"
+                name="interval"
+                id="interval"
+                class="input-xlarge"
+                default="2000"
+                label="Set Interval"
+                description="Set Interval"  />
+            <field
+                type="text"
+                name="animspeed"
+                id="animspeed"
+                class="input-xlarge"
+                default="1000"
+                label="Animate Speed"
+                description="Animate Speed"  />
+            <field
+                type="text"
+                name="step"
+                id="step"
+                class="input-xlarge"
+                default="2"
+                label="Number Of Items That Are Replaced At The Same Time"
+                description="Number Of Items That Are Replaced At The Same Time"  />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuramistimagegrid" client="site"
+            />
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="gridContent"
+                    id="gridContent"
+                    label="Grid Content (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Grid Content (Can be use with html tags.)"
+                    cols="24"
+                    rows="15" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="all"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

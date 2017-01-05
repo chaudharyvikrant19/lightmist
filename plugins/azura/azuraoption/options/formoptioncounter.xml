@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <!-- <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="Wrapper ID"
+                    description="Wrapper ID" />
+
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    label="Wrapper Class"
+                    description="Wrapper Class"
+                    /> -->
+            <!-- <field
+                    type="text"
+                    name="startvalue"
+                    id="startvalue"
+                    default="0"
+                    label="Start Value"
+                    description="The number to start counting from" /> -->
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="input-xlarge"
+                    default="Projects"
+                    label="Title"
+                    description="Title" />
+            <field
+                    type="text"
+                    name="stopvalue"
+                    id="stopvalue"
+                    default="100"
+                    class="input-xlarge"
+                    label="Stop Value"
+                    description="The number to stop counting at." />
+            <field
+                    type="text"
+                    name="speed"
+                    id="speed"
+                    default="10000"
+                    class="input-xlarge"
+                    label="Speed"
+                    description="The number of milliseconds it should take to finish counting." />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <!-- <field
+                    type="text"
+                    name="refreshinterval"
+                    id="refreshinterval"
+                    default=""
+                    label="Refresh Interval"
+                    description="The number of milliseconds to wait between refreshing the counter."
+                    /> -->
+            <!-- <field
+                    type="text"
+                    name="unit"
+                    id="unit"
+                    label="Counter Unit"
+                    description="Counter Unit"
+                    /> -->
+            <field 
+                name="layout" label="Shortcode Layout" class="input-xlarge"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuracounter" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Text Content"
+                    class="input-xxlarge"
+                    description="Text Content"
+                    cols="24"
+                    rows="3" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Container Class"
+                    description="Container Class"  />
+            <field
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="input-xlarge"
+                    label="Skill Name"
+                    description="Skill Name"  />
+            <field
+                    type="text"
+                    name="size"
+                    id="size"
+                    default="140"
+                    class="input-xlarge"
+                    label="Circle Size"
+                    description="Circle Size"
+                    />
+            <field
+                    type="text"
+                    name="linewidth"
+                    id="linewidth"
+                    default="4"
+                    class="input-xlarge"
+                    label="Line Width"
+                    description="Line Width"
+                    />
+            <field
+                    type="color"
+                    name="trackcolor"
+                    id="trackcolor"
+                    default="#ffffff"
+                    class="input-xlarge"
+                    label="Track Color"
+                    description="Track Color"
+                    />
+            <field
+                    type="color"
+                    name="barcolor"
+                    id="barcolor"
+                    default="#ffc400"
+                    class="input-xlarge"
+                    label="Bar Color"
+                    description="Bar Color"
+                    />
+            <field
+                    type="text"
+                    name="percent"
+                    id="percent"
+                    class="input-xlarge"
+                    label="Skill Percent"
+                    description="Skill Percent"
+                    />
+            <field 
+                name="layout" class="input-xlarge" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuramistskillscircle" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

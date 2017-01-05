@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    class="input-xlarge"
+                    label="Id"
+                    description="Id"  />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Class"
+                    description="Class"  />
+            <field
+                    type="text"
+                    name="items"
+                    id="items"
+                    default="6"
+                    class="input-xlarge"
+                    label="Items Display"
+                    description="Number Of Items Display"  />
+            <field
+                    type="text"
+                    name="itemwidth"
+                    id="itemwidth"
+                    class="input-xlarge"
+                    label="Item Width"
+                    description="Item Width"  />
+            <field
+                    type="text"
+                    name="itemheight"
+                    id="itemheight"
+                    class="input-xlarge"
+                    label="Item Height"
+                    description="Item Height"  />
+            <field
+                    type="radio"
+                    name="pagination"
+                    id="pagination"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Pagination"
+                    description="Pagination">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="autoplay"
+                    id="autoplay"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Autoplay"
+                    description="Autoplay">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="navigation"
+                    id="navigation"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Navigation"
+                    description="Navigation">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+
+            <field 
+                name="layout" class="input-xlarge" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuramistclientsslider" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

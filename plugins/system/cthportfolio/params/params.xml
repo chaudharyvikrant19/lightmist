@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params" >
+        <fieldset name="portfolio_column">
+            <field name="portfoliocols" type="list" label="Portfolio Columns"
+                   description="Portfolio Columns" default="4">
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+            </field>
+            <field name="portfolio_style" type="list" label="Portfolio Style"
+                   description="Portfolio Style" default="masonry">
+                   <option value="masonry">Masonry</option>
+                   <option value="masonry_gutter">Masonry Gutter</option>
+                   <option value="masonry_full_width">Masonry Full Width</option>
+                   <option value="masonry_wide_gutter">Masonry Wide Gutter</option>
+                   <option value="list">List</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

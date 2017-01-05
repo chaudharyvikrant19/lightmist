@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="Section ID"
+                    class="input-xlarge"
+                    description="Section ID be used in azurarow-section layout only" />
+            <field
+                    type="text"
+                    name="secclass"
+                    id="secclass"
+                    class="input-xlarge"
+                    label="Section Class"
+                    description="Section Class be used in azurarow-section layout only" />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field
+                    type="AzuraMedia"
+                    name="overlaybackground"
+                    id="overlaybackground"
+                    class="input-xlarge"
+                    label="Overlay Background"
+                    description="Overlay Background"
+                    />
+            <field
+                    type="text"
+                    name="overlayclass"
+                    id="overlayclass"
+                    class="input-xlarge"
+                    label="Overlay Class"
+                    description="Overlay Class"
+                    />
+            <field
+                    type="radio"
+                    name="isfullwidth"
+                    id="isfullwidth"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Is Fullwidth"
+                    description="Is Fullwidth"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurarow" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Section Introtext (Can be use with html tags.)"
+                    class="input-xxlarge "
+                    description="Section Introtext (Can be use with html tags)"
+                    cols="24"
+                    rows="7" mode="html"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

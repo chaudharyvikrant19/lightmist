@@ -1,0 +1,89 @@
+.mega-1,.mega-2,.mega-3,.mega-4,.mega-5 {
+	display: none;
+}
+
+.mist-btn-border {
+    border: 2px solid #dddddd !important;
+    background-color: transparent;
+    color: #333333;
+    line-height: 30px !important;
+    height: 34px !important;
+    transition: all ease 0.4s;
+}
+
+.mist-btn-border-secondary {
+    border: 2px solid #7B7B7B !important;
+    background-color: transparent;
+    color: #333333;
+    line-height: 30px !important;
+    height: 34px !important;
+    transition: all ease 0.4s;
+}
+
+.mist-btn {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    line-height: 34px;
+    height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: all ease 0.4s;
+    border: 0px;
+}
+
+.pordetail .owl-controls{
+    background-color: gray;
+}
+
+.mega-menu-pos-1 .form-control,
+.mega-menu-pos-2 .form-control,
+.mega-menu-pos-3 .form-control,
+.mega-menu-pos-4 .form-control,
+.mega-menu-pos-5 .form-control {
+    /*font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    margin-bottom: 0;*/
+}
+
+.mega-menu-pos-1 #form-login-username .input-group-addon,
+.mega-menu-pos-2 #form-login-username .input-group-addon,
+.mega-menu-pos-3 #form-login-username .input-group-addon,
+.mega-menu-pos-4 #form-login-username .input-group-addon,
+.mega-menu-pos-5 #form-login-username .input-group-addon {
+    padding-right: 10px;
+}
+
+.form-login-username .input-group-addon {
+    padding-right: 10px;
+}
+
+#works-slide {
+    background-color: #000;
+}
+
+.category-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.category-sidebar ul li i {
+    margin-right: 10px;
+}
+
+.post-tag {
+    padding-bottom: 40px;
+}
+
+.post-tag .post-image.pull-left {
+    margin-right: 20px;
+}
+
+.search .radio,
+.search .checkbox {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}

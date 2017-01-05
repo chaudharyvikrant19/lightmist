@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Container Class"
+                    description="Container Class"  />
+            <field
+                    type="text"
+                    name="offer"
+                    id="offer"
+                    class="input-xlarge"
+                    label="Offer"
+                    description="Offer"
+                    />
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="input-xlarge"
+                    label="Title"
+                    description="Title"
+                    />
+            <field
+                    type="text"
+                    name="starting"
+                    id="starting"
+                    class="input-xlarge"
+                    label="Starting At"
+                    description="Price Box"
+                    />
+            <field
+                    type="text"
+                    name="pricebox"
+                    id="pricebox"
+                    class="input-xlarge"
+                    label="Price Box"
+                    description="Price Box"
+                    />
+            <field
+                    type="AzuraMedia"
+                    name="img"
+                    id="img"
+                    class="input-xlarge"
+                    label="Image Source"
+                    description="Image Source"
+                    />
+            <field
+                    type="text"
+                    name="width"
+                    id="width"
+                    class="input-xlarge"
+                    label="Image Width"
+                    description="Image Width"
+                    />
+            <field
+                    type="text"
+                    name="height"
+                    id="height"
+                    class="input-xlarge"
+                    label="Image Height"
+                    description="Image Height"
+                    />
+            <field
+                    type="text"
+                    name="btn"
+                    id="btn"
+                    class="input-xlarge"
+                    label="Text On Button"
+                    description="Text On Button"
+                    />
+            <field
+                    type="text"
+                    name="link"
+                    id="link"
+                    class="input-xlarge"
+                    label="Button Link"
+                    description="Button Link"
+                    />
+            <field 
+                name="layout" class="input-xlarge" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuramistpricing" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Option: (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Option: (Can be use with html tags.)"
+                    cols="24"
+                    rows="14" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
+

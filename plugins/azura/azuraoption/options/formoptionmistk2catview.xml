@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    class="input-xlarge"
+                    label="Extra Class"
+                    description="Extra Class"
+                    default="" />
+            <field 
+                    name="category" 
+                    type="sql" 
+                    id="category"
+                    label="K2 Category"
+                    class="input-xlarge"
+                    description="Select a k2 category to get items from" 
+                    query="SELECT id AS value, name AS category FROM #__k2_categories WHERE published=1 AND trash=0" />
+            <field
+                    type="text"
+                    name="limit"
+                    id="limit"
+                    default="All"
+                    class="input-xlarge"
+                    label="Limit"
+                    description="Integers or `All` string"
+                    />
+            <field
+                    type="list"
+                    name="order"
+                    id="order"
+                    default="created"
+                    label="Order"
+                    class="input-xlarge"
+                    description="Order"
+                    >
+                <option value="created" >Created</option>
+                <option value="id" >ID</option>
+                <option value="ordering" >Ordering</option>
+            </field>
+            <field
+                    type="list"
+                    name="orderdir"
+                    id="orderdir"
+                    class="input-xlarge"
+                    default="DESC"
+                    label="Order Direction"
+                    description="Order Direction"
+                    >
+                <option value="ASC" >Ascending</option>
+                <option value="DESC" >Descending</option>
+            </field>
+            <field
+                    type="list"
+                    name="columns"
+                    id="columns"
+                    default="col-sm-4"
+                    label="Columns"
+                    class="input-xlarge"
+                    description="Columns"
+                    >
+                <option value="col-sm-12" >1</option>
+                <option value="col-sm-6" >2</option>
+                <option value="col-sm-4" >3</option>
+                <option value="col-sm-3" >4</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuramistk2catview" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
